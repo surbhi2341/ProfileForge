@@ -8,7 +8,7 @@ export default function ViewPortfolio() {
   const [portfolio, setPortfolio] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/portfolio/${slug}`)
+    fetch(`https://profileforge-3.onrender.com/api/portfolio/${slug}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setPortfolio(data.data);
