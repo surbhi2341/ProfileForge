@@ -244,8 +244,8 @@ export default function PortfolioBuilder() {
             // ONLY change this part inside savePortfolio()
 
             const url = editingId
-                ? `http://localhost:5000/api/portfolio/edit/${editingId}`
-                : `http://localhost:5000/api/portfolio/save`;
+                ? `https://profileforge-3.onrender.com/api/portfolio/edit/${editingId}`
+                : `https://profileforge-3.onrender.com/api/portfolio/save`;
 
             const method = editingId ? "PUT" : "POST";
 
@@ -303,7 +303,7 @@ export default function PortfolioBuilder() {
     };
     const fetchSavedPortfolios = async () => {
         try {
-            const res = await fetch("http://localhost:5000/api/portfolio/all");
+            const res = await fetch("https://profileforge-3.onrender.com/api/portfolio/all");
             const data = await res.json();
 
             if (data.success) {
@@ -342,7 +342,7 @@ export default function PortfolioBuilder() {
 const deletePortfolio = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:5000/api/portfolio/delete/${id}`,
+      `https://profileforge-3.onrender.com/portfolio/delete/${id}`,
       {
         method: "DELETE",
       }
