@@ -3,7 +3,7 @@ import axios from 'axios';
 export default function AIAtsChecker(){
  const [resume,setResume]=useState(''); const [jd,setJd]=useState(''); const [data,setData]=useState(null);
  const run=async()=>{
-  const res=await axios.post('http://localhost:5000/api/ats-ai',{resume,jd});
+  const res=await axios.post('https://profileforge-3.onrender.com/api/ats-ai',{resume,jd});
   setData(res.data);
  };
  return <div className='p-6'>
