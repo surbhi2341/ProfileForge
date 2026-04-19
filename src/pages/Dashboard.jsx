@@ -55,7 +55,7 @@ const Dashboard = () => {
     try {
       const formData = new FormData();
       formData.append('resume', resume);
-      const { data } = await API.post('http://localhost:5000/api/resume/upload-pdf', formData, {
+      const { data } = await API.post('https://profileforge-3.onrender.com/api/resume/upload-pdf', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       // Create a new resume with the parsed data
