@@ -9,7 +9,7 @@ import Layout from './pages/Layout';
 import Login from './pages/Login';
 import AtsChecker from './pages/AtsChecker';
 import PortfolioBuider from './pages/PortfolioBuilder';
-import AIAtsChecker from './pages/AIAtSChecker';
+import AIAtsChecker from './pages/AIAtsChecker';
 import ViewPortfolio from "./pages/ViewPortfolio";
 
 
