@@ -85,7 +85,7 @@ export default function AtsChecker() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/jobs", {
+      const res = await fetch("https://profileforge-3.onrender.com/api/jobs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resume })
